@@ -20,6 +20,7 @@
 <div id="map" style="width: 500px; height: 400px;"></div>
 
 <%= javascript_tag do %>
+  window.choose = 0
   window.latitude = '<%= @location.latitude %>';
   window.longitude = '<%= @location.longitude %>';
   window.address = '<%= @location.address %>';

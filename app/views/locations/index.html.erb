@@ -29,3 +29,8 @@
 <br>
 
 <%= link_to 'New Location', new_location_path %>
+<div id="maps" style="width: 500px; height: 400px;"></div>
+<%= javascript_tag do %>
+  window.size = <%= @locations.size %>  
+  window.locations = <%= raw @locations.to_json %>
+<% end %>
